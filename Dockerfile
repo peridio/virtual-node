@@ -1,6 +1,6 @@
 FROM alpine:3.16.1
 RUN apk -U add qemu-system-aarch64
-RUN mkdir /root/output/images
+RUN mkdir -p /root/output/images
 COPY Image /root/output/images
 COPY rootfs.ext4 /root/output/images
 
